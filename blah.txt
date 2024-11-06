@@ -1,0 +1,6 @@
+module data_flow_mod(
+	input A,B,C,D,
+	output F
+);
+	assign F=(A | ~D) & (~B | ~D);
+endmodule
